@@ -6,6 +6,7 @@ var drag = 10.0;
 var angularDrag = 5.0;
 var distance = 0.2;
 var attachToCenterOfMass = false;
+var raycastMask : LayerMask;
 
 private var springJoint : SpringJoint;
 
@@ -19,7 +20,7 @@ function Update ()
 		
 	// We need to actually hit an object
 	var hit : RaycastHit;
-	if (!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition),  hit, 100))
+	if (!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition),  hit, 100, raycastMask))
 		return;
 	// We need to hit a rigidbody that is not kinematic
 	if (!hit.rigidbody || hit.rigidbody.isKinematic)
@@ -33,8 +34,10 @@ function Update ()
 		springJoint = go.AddComponent ("SpringJoint");
 		body.isKinematic = true;
 	}
-	
-	springJoint.transform.position = hit.point;
+	var hitpos : Vector3 = hit.point;
+	hitpos.z = 0;
+	springJoint.transform.position = hitpos;// hit.point;
+	hit.rigidbody.transform.position.z = 0;
 	if (attachToCenterOfMass)
 	{
 		var anchor = transform.TransformDirection(hit.rigidbody.centerOfMass) + hit.rigidbody.transform.position;

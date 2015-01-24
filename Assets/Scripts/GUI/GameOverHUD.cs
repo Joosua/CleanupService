@@ -12,12 +12,12 @@ public class GameOverHUD : IMenuBase
 	public override void OnShow()
 	{
 		state = GameLogic.Instance.State<GameOverState>();
-		//closeButton.onClick.AddListener(OnClose);
+		closeButton.onClick.AddListener(OnClose);
 	}
 
 	public override void OnHide()
 	{
-		//closeButton.onClick.RemoveListener(OnClose);
+		closeButton.onClick.RemoveListener(OnClose);
 	}
 
 	public void SetHeader(string header)

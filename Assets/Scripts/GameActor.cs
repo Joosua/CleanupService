@@ -3,12 +3,17 @@ using System.Collections;
 
 public class GameActor : MonoBehaviour
 {
-	public enum Type
+	public enum ActorType
 	{
 		Normal,
 		Evidence
 	}
-	public Type actorType;
+
+	private ActorType actorType;
+	public ActorType Type
+	{
+		get { return actorType; }
+	}
 
 	private Material defaultMaterial;
 	public Material noticedMaterial;

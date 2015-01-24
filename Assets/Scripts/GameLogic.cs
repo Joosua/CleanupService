@@ -7,7 +7,8 @@ public class GameLogic : MonoBehaviour
 	private static GameLogic instance;
 	public static GameLogic Instance
 	{
-		get {
+		get
+		{
 			return instance;
 		}
 	}
@@ -20,17 +21,22 @@ public class GameLogic : MonoBehaviour
 	public GameState ActiveState
 	{
 		get { return activeState; }
-		set {
-			if (activeState != value) {
+		set
+		{
+			if (activeState != value)
+			{
 				if (activeState != null)
 					activeState.OnDisabled();
+
 				activeState = value;
-				activeState.OnEnabled();
+
+				if (activeState != null)
+					activeState.OnEnabled();
 			}
 		}
 	}
 
-	public T GetGameState<T>() where T : GameState
+	public T State<T>() where T : GameState
 	{
 		foreach (GameState state in gameStates)
 			if (state.GetType() == typeof(T))
@@ -55,11 +61,25 @@ public class GameLogic : MonoBehaviour
 			gameObjects.Remove(go);
 	}
 	
-	void Start () {
-	
+	void Start ()
+	{
+		StartCoroutine(DelayedStart(3f));
 	}
 
-	void Update () {
-	
+	IEnumerator DelayedStart(float waitTime)
+	{
+		yield return new WaitForSeconds(waitTime);
+		StartGame();
+	}
+
+	void StartGame()
+	{
+		this.ActiveState = State<ItemMovingState>();
+	}
+
+	void FixedUpdate()
+	{
+		if (activeState != null)
+			activeState.Tick();
 	}
 }

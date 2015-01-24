@@ -1586,6 +1586,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &209965557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,6 +2932,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &335294819
 GameObject:
   m_ObjectHideFlags: 0
@@ -6133,6 +6135,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &799696400
 GameObject:
   m_ObjectHideFlags: 0
@@ -7587,6 +7590,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 2100000, guid: 7ee87c99dfae0f3439b6ea4508c9a2e0, type: 2}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1007891999
 GameObject:
   m_ObjectHideFlags: 0
@@ -7690,6 +7694,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1025130155
 GameObject:
   m_ObjectHideFlags: 0
@@ -7793,6 +7798,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1048381788
 GameObject:
   m_ObjectHideFlags: 0
@@ -8380,6 +8386,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1125691400
 GameObject:
   m_ObjectHideFlags: 0
@@ -8619,6 +8626,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1001 &1126376865
 Prefab:
   m_ObjectHideFlags: 0
@@ -10047,6 +10055,7 @@ MonoBehaviour:
   refreshRate: 10
   visionAngle: 60
   maxDistance: 2000
+  alertSound: {fileID: 0}
   visibleItems: []
 --- !u!1 &1315935812
 GameObject:
@@ -10624,6 +10633,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1370075602
 GameObject:
   m_ObjectHideFlags: 0
@@ -14358,6 +14368,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1762744796
 GameObject:
   m_ObjectHideFlags: 0
@@ -15341,6 +15352,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1880791332
 GameObject:
   m_ObjectHideFlags: 0
@@ -15849,6 +15861,7 @@ MonoBehaviour:
   actorType: 0
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1 &1920880111
 GameObject:
   m_ObjectHideFlags: 0

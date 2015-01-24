@@ -1,8 +1,15 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class GameActor : MonoBehaviour
 {
+	public enum Type
+	{
+		Normal,
+		Evidence
+	}
+	public Type actorType;
+
 	private Material defaultMaterial;
 	public Material noticedMaterial;
 

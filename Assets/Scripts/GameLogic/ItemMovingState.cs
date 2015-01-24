@@ -38,7 +38,7 @@ public class ItemMovingState : GameState
 			}
 			else
 			{
-				//TODO Change game state!
+				GameLogic.Instance.ActiveState = GameLogic.Instance.State<FinalCheckState>();
 			}
 			nextTick = Time.time + 1f;
 		}

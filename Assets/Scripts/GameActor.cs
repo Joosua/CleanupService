@@ -9,7 +9,7 @@ public class GameActor : MonoBehaviour
 		Evidence
 	}
 
-	private ActorType actorType;
+	public ActorType actorType;
 	public ActorType Type
 	{
 		get { return actorType; }

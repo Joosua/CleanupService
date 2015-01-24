@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2374898}
   - 65: {fileID: 6574898}
   - 114: {fileID: 11446010}
+  - 114: {fileID: 11495310}
   m_Layer: 0
   m_Name: BloodStain
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxblood: 100
   startcutout: 0
+--- !u!114 &11495310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49724dc6243aeca409be7815084b06b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noticedMaterial: {fileID: 0}
+  hoverText: Unknown Object
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

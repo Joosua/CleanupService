@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -31,6 +31,14 @@ public class FinalCheckState : GameState
 
 		scanIndex = 0;
 
+		nextLocationTime = Time.time + scanTime;
+		nextTurnTime = Time.time + turnTime;
+
+		if (!MoveNextLocation())
+			OnFinished();
+
+		policeOfficer.SetActive(true);
+
 		base.OnEnabled();
 	}
 
@@ -38,19 +46,23 @@ public class FinalCheckState : GameState
 	{
 		MenuManager.Instance.HideMenu<FinalCheckHUD>();
 
-		if (!MoveNextLocation())
-			OnFinished();
+		policeOfficer.SetActive(false);
 
 		base.OnDisabled();
 	}
 
 	public bool MoveNextLocation()
 	{
-		if (scanIndex > scanLocations.Count)
+		if (scanIndex > scanLocations.Count - 1)
 			return false;
 
 		policeOfficer.transform.position = scanLocations[scanIndex].position;
 		scanIndex++;
+
+		Vector3 pos = policeOfficer.transform.position;
+		pos.z = Camera.main.transform.position.z;
+		pos.y = Camera.main.transform.position.y;
+		Camera.main.transform.position = pos;
 
 		return true;
 	}
@@ -58,7 +70,8 @@ public class FinalCheckState : GameState
 	public void FlipCharacter()
 	{
 		Vector3 euler = policeOfficer.transform.eulerAngles;
-		euler.y = euler.y > 0 ? -90f : 90f;
+		euler.y = euler.y < 180 ? 270f : 90f;
+		Debug.Log("Euler is " + euler);
 		policeOfficer.transform.eulerAngles = euler;
 	}
 
@@ -70,11 +83,20 @@ public class FinalCheckState : GameState
 				OnFinished();
 			nextLocationTime = Time.time + scanTime;
 		}
-		if (Time.time >= turnTime)
+
+		if (Time.time >= nextTurnTime)
 		{
 			FlipCharacter();
-			nextTurnTime = nextLocationTime + turnTime;
+			nextTurnTime = Time.time + turnTime;
 		}
+
+		int found = 0;
+		foreach (GameActor actor in evidences)
+		{
+			if (actor.VisibilityState == GameActor.Visibility.Visible)
+				found++;
+		}
+		MenuManager.Instance.Menu<FinalCheckHUD>().SetEvidenceCount(found, evidenceFailCount);
 	}
 
 	void OnFinished()

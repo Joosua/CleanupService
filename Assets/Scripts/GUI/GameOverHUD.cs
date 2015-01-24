@@ -5,24 +5,24 @@ using System.Collections;
 public class GameOverHUD : IMenuBase
 {
 	private GameOverState state;
-	public Text gradeText;
+	public Text headerText;
 	public Text evidenceText;
 	public Button closeButton;
 
 	public override void OnShow()
 	{
 		state = GameLogic.Instance.State<GameOverState>();
-		closeButton.onClick.AddListener(OnClose);
+		//closeButton.onClick.AddListener(OnClose);
 	}
 
 	public override void OnHide()
 	{
-		closeButton.onClick.RemoveListener(OnClose);
+		//closeButton.onClick.RemoveListener(OnClose);
 	}
 
-	public void SetGrade(string grade)
+	public void SetHeader(string header)
 	{
-		gradeText.text = grade;
+		headerText.text = header;
 	}
 
 	public void SetEvidenceCount(int foundCount, int FailCount)
@@ -32,7 +32,6 @@ public class GameOverHUD : IMenuBase
 
 	private void OnClose()
 	{
-		Debug.Log("Add implementation!");
-		// TODO! load main menu.
+		state.OnFinish();
 	}
 }

@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class ItemMovingState : GameState
+public class MoveState : GameState
 {
-	private int timeLeft = 5 * 60;
+	public int totalTime = 10;
+	private int timeLeft = 0;
 	public int TimeLeft
 	{
 		get { return timeLeft; }
@@ -13,7 +14,8 @@ public class ItemMovingState : GameState
 
 	public override void OnEnabled()
 	{
-		timeLeft = 5 * 60;
+		Debug.Log("Set state to Move!");
+		timeLeft = totalTime;
 		MenuManager.Instance.ShowMenu<ItemMoveHUD>();
 		MenuManager.Instance.Menu<ItemMoveHUD>().SetClock(timeLeft);
 		nextTick = Time.time + 1f;

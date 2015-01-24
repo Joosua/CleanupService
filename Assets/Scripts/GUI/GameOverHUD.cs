@@ -5,7 +5,7 @@ using System.Collections;
 public class GameOverHUD : IMenuBase
 {
 	private GameOverState state;
-	public Text gradeText;
+	public Text headerText;
 	public Text evidenceText;
 	public Button closeButton;
 
@@ -20,9 +20,9 @@ public class GameOverHUD : IMenuBase
 		closeButton.onClick.RemoveListener(OnClose);
 	}
 
-	public void SetGrade(string grade)
+	public void SetHeader(string header)
 	{
-		gradeText.text = grade;
+		headerText.text = header;
 	}
 
 	public void SetEvidenceCount(int foundCount, int FailCount)
@@ -32,7 +32,6 @@ public class GameOverHUD : IMenuBase
 
 	private void OnClose()
 	{
-		Debug.Log("Add implementation!");
-		// TODO! load main menu.
+		state.OnFinish();
 	}
 }

@@ -19,7 +19,6 @@ public abstract class IMenuBase : MonoBehaviour
 
 	virtual public void Hide()
 	{
-		Debug.Log("Hide menu");
 		gameObject.SetActive(false);
 		OnHide();
 	}

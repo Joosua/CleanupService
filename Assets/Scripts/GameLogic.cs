@@ -63,18 +63,12 @@ public class GameLogic : MonoBehaviour
 	
 	void Start ()
 	{
-		StartCoroutine(DelayedStart(3f));
-	}
-
-	IEnumerator DelayedStart(float waitTime)
-	{
-		yield return new WaitForSeconds(waitTime);
 		StartGame();
 	}
 
 	void StartGame()
 	{
-		this.ActiveState = State<ItemMovingState>();
+		this.ActiveState = State<ObjectiveState>();
 	}
 
 	void FixedUpdate()

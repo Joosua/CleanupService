@@ -4,12 +4,12 @@ using UnityEngine.UI;
 
 public class ItemMoveHUD : IMenuBase
 {
-	private ItemMovingState state;
+	private MoveState state;
 	public Text timeText;
 
 	public override void OnShow()
 	{
-		state = GameLogic.Instance.State<ItemMovingState>();
+		state = GameLogic.Instance.State<MoveState>();
 	}
 
 	public override void OnHide()

@@ -10,6 +10,8 @@ public class VisionSensor : MonoBehaviour
 	public float visionAngle = 60f;
 	public float maxDistance = 20f;
 
+	public AudioSource alertSound;
+
 	public GameObject[] visibleItems;
 
 	void Start ()
@@ -37,10 +39,13 @@ public class VisionSensor : MonoBehaviour
 				{
 					ray.direction = direction;
 					ray.origin = transform.position;
+					Debug.DrawLine(ray.origin, ray.origin + ray.direction * 5f, Color.blue, 2f);
 					if (Physics.Raycast(ray, out hitInfo, maxDistance) &&
 						hitInfo.collider.gameObject == obj.gameObject)
 					{
 						obj.VisibilityState = GameActor.Visibility.Visible;
+						if (!alertSound.isPlaying)
+							alertSound.Play();
 					}
 				}
 			}

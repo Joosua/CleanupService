@@ -52,7 +52,6 @@ public class MenuManager : MonoBehaviour
 
 	public void RegisterMenu(IMenuBase menu)
 	{
-		Debug.Log(menu);
 		if (!menus.Contains(menu))
 			menus.Add(menu);
 	}

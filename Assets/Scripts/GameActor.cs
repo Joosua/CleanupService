@@ -25,13 +25,15 @@ public class GameActor : MonoBehaviour
 
 	public string hoverText = "Unknown Object";
 
-	private Visibility visibilityState = Visibility.NotVisible;
+	public Visibility visibilityState = Visibility.NotVisible;
 	public Visibility VisibilityState {
 		set {
 			if (value == Visibility.NotVisible)
 				renderer.material = defaultMaterial;
 			else if (noticedMaterial != null)
+			{
 				renderer.material = noticedMaterial;
+			}
 			visibilityState = value;
 		}
 		get { return visibilityState; }

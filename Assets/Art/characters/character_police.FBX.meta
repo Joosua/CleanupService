@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 640f6b40aaad14a48898373409fc2300
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: arm_down_left
+    100002: arm_down_right
+    100004: arm_up_left
+    100006: arm_up_right
+    100008: Box02
+    100010: //RootNode
+    100012: head
+    100014: leg_down_left
+    100016: leg_down_right
+    100018: leg_up_left
+    100020: leg_up_right
+    100022: Object01
+    100024: Object02
+    100026: police-hat
+    100028: torso
+    400000: arm_down_left
+    400002: arm_down_right
+    400004: arm_up_left
+    400006: arm_up_right
+    400008: Box02
+    400010: //RootNode
+    400012: head
+    400014: leg_down_left
+    400016: leg_down_right
+    400018: leg_up_left
+    400020: leg_up_right
+    400022: Object01
+    400024: Object02
+    400026: police-hat
+    400028: torso
+    2300000: arm_down_left
+    2300002: arm_down_right
+    2300004: arm_up_left
+    2300006: arm_up_right
+    2300008: Box02
+    2300010: head
+    2300012: leg_down_left
+    2300014: leg_down_right
+    2300016: leg_up_left
+    2300018: leg_up_right
+    2300020: Object02
+    2300022: police-hat
+    2300024: torso
+    3300000: arm_down_left
+    3300002: arm_down_right
+    3300004: arm_up_left
+    3300006: arm_up_right
+    3300008: Box02
+    3300010: head
+    3300012: leg_down_left
+    3300014: leg_down_right
+    3300016: leg_up_left
+    3300018: leg_up_right
+    3300020: Object02
+    3300022: police-hat
+    3300024: torso
+    4300000: torso
+    4300002: arm_up_left
+    4300004: arm_down_left
+    4300006: Box02
+    4300008: arm_up_right
+    4300010: arm_down_right
+    4300012: leg_up_left
+    4300014: leg_down_left
+    4300016: leg_up_right
+    4300018: leg_down_right
+    4300020: head
+    4300022: police-hat
+    4300024: Object02
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

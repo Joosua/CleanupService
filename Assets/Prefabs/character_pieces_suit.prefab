@@ -1358,7 +1358,7 @@ Rigidbody:
   m_GameObject: {fileID: 196110}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2.30999994
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1373,7 +1373,7 @@ Rigidbody:
   m_GameObject: {fileID: 196112}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2.30999994
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1388,7 +1388,7 @@ Rigidbody:
   m_GameObject: {fileID: 196114}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2.30999994
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1403,7 +1403,7 @@ Rigidbody:
   m_GameObject: {fileID: 196116}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2.30999994
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1418,7 +1418,7 @@ Rigidbody:
   m_GameObject: {fileID: 196118}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2.30999994
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1433,7 +1433,7 @@ Rigidbody:
   m_GameObject: {fileID: 196120}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1448,7 +1448,7 @@ Rigidbody:
   m_GameObject: {fileID: 196122}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1463,7 +1463,7 @@ Rigidbody:
   m_GameObject: {fileID: 196124}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1478,7 +1478,7 @@ Rigidbody:
   m_GameObject: {fileID: 196126}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2.30999994
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1493,7 +1493,7 @@ Rigidbody:
   m_GameObject: {fileID: 196128}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: .779999971
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -1984,7 +1984,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.0127516408, y: .00260694767, z: -.147203028}
@@ -1997,7 +1997,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.0127515169, y: .00260694115, z: -.147202998}
@@ -2010,7 +2010,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.00713739172, y: -.0128253261, z: -.186789289}
@@ -2036,7 +2036,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.00741913402, y: -.020527551, z: -.209604174}
@@ -2049,7 +2049,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.0199999996, y: .00999999978, z: -.209999993}
@@ -2062,7 +2062,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: .00999999978, y: -.0500000007, z: -.236880139}
@@ -2075,7 +2075,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.00713739172, y: -.0128253223, z: -.186789334}
@@ -2088,7 +2088,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0399999991
+  m_Radius: .0500000007
   m_Height: .340000004
   m_Direction: 2
   m_Center: {x: -.00741898548, y: -.0205275267, z: -.209604114}

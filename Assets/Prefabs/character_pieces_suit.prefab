@@ -324,6 +324,7 @@ GameObject:
   - 54: {fileID: 5496118}
   - 114: {fileID: 11429680}
   - 114: {fileID: 11410658}
+  - 114: {fileID: 11400540}
   m_Layer: 9
   m_Name: character_pieces_suit
   m_TagString: Untagged
@@ -658,8 +659,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196118}
-  m_LocalRotation: {x: -.707106948, y: -4.67189466e-07, z: -.70710665, w: 4.68150859e-07}
-  m_LocalPosition: {x: 21.0699997, y: -.74000001, z: -.550000012}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: -0, y: 1.35338724, z: 8.58306848e-08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496114}
@@ -1520,7 +1521,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0299999993, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .0042950958, y: .116517052, z: .291448444}
+  m_ConnectedAnchor: {x: .0042951582, y: .11651703, z: .291448295}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1550,7 +1551,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .060366001, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .149777398, y: .193717301, z: .207685143}
+  m_ConnectedAnchor: {x: .149777427, y: .193717316, z: .207685754}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1580,7 +1581,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0603659078, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.144888088, y: .193717241, z: .207685277}
+  m_ConnectedAnchor: {x: -.144888073, y: .193717226, z: .207685754}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1610,7 +1611,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0439667255, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0820006505, y: .143437535, z: -.441057354}
+  m_ConnectedAnchor: {x: -.0820006952, y: .14343752, z: -.44105795}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1640,7 +1641,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0382440686, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0180877373, y: .0631204098, z: -.278470874}
+  m_ConnectedAnchor: {x: -.0180878472, y: .06312038, z: -.278470427}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1670,7 +1671,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0585327297, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0119998753, y: .0206435248, z: -.36883679}
+  m_ConnectedAnchor: {x: -.012000002, y: .0206435174, z: -.368836075}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1700,7 +1701,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0585328341, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.00789669901, y: .0291041937, z: -.329835445}
+  m_ConnectedAnchor: {x: -.00789661705, y: .0291042235, z: -.3298361}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1730,7 +1731,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0439668186, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: .0868901238, y: .143437594, z: -.441057444}
+  m_ConnectedAnchor: {x: .0868900567, y: .143437624, z: -.44105795}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1760,7 +1761,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: .0382439941, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.0210507829, y: .0461203009, z: -.31747064}
+  m_ConnectedAnchor: {x: -.0210508648, y: .0461202972, z: -.317470431}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1795,6 +1796,24 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e5817de46c2f4428b93c359b5fa172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11458758, guid: 35e2a2882fe5e27429229dfdc39c4804, type: 2}
+  - {fileID: 11458758, guid: 35e2a2882fe5e27429229dfdc39c4804, type: 2}
 --- !u!114 &11410658
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1972,6 +1991,7 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab: []
   enableOnBreak:
   - {fileID: 142082}
 --- !u!114 &11442084
@@ -1990,6 +2010,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 138834}
   - {fileID: 183694}
@@ -2009,6 +2034,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 138832}
   - {fileID: 183696}
@@ -2028,6 +2058,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 138830}
   - {fileID: 138836}
@@ -2047,6 +2082,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 142090}
 --- !u!114 &11442092
@@ -2065,6 +2105,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 142086}
 --- !u!114 &11442094
@@ -2083,6 +2128,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 142084}
 --- !u!114 &11442096
@@ -2101,6 +2151,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 142088}
   - {fileID: 183692}
@@ -2120,6 +2175,11 @@ MonoBehaviour:
   Damage: 0
   particleeffect_prefab: {fileID: 19847560, guid: f351dd7216f6ed048a8054c4fff0648c,
     type: 2}
+  bloodStain_prefab:
+  - {fileID: 11446010, guid: 4ad7b8d33d8d7b54e84cdb0c37fccbca, type: 2}
+  - {fileID: 11414070, guid: 40b9bb72862883d498bab2fb998c62b6, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
+  - {fileID: 11450764, guid: 573e72f881af1bc4da69c7fa1196c4c7, type: 2}
   enableOnBreak:
   - {fileID: 183698}
 --- !u!136 &13696110

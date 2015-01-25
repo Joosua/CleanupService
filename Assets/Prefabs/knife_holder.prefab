@@ -49,7 +49,6 @@ GameObject:
   - 33: {fileID: 3395662}
   - 23: {fileID: 2395662}
   - 95: {fileID: 9595662}
-  - 65: {fileID: 6502842}
   m_Layer: 0
   m_Name: knife_holder
   m_TagString: Untagged
@@ -89,8 +88,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195662}
   m_LocalRotation: {x: -1.51442975e-06, y: -.707106769, z: -.707106829, w: 1.67037319e-06}
-  m_LocalPosition: {x: 7.48099995, y: .888999999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 7.66699982, y: .704999983, z: -.105999999}
+  m_LocalScale: {x: 1.22828436, y: 1.22828448, z: 1.22828448}
   m_Children:
   - {fileID: 402844}
   m_Father: {fileID: 0}
@@ -171,18 +170,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 56
   m_CollisionDetection: 0
---- !u!65 &6502842
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195662}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .43638745, y: 2.5999999, z: .366910279}
-  m_Center: {x: .00265839696, y: 3.7345675e-08, z: .0419519544}
 --- !u!65 &6502844
 BoxCollider:
   m_ObjectHideFlags: 1

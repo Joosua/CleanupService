@@ -13,7 +13,7 @@ GameObject:
   - 65: {fileID: 6514070}
   - 114: {fileID: 11414070}
   - 114: {fileID: 11400072}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BloodStain_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}

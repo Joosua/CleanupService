@@ -8,6 +8,8 @@ public class FinalCheckState : GameState
 	public int evidenceFailCount = 7;
 	public List<GameActor> evidences = new List<GameActor>();
 	public GameObject theVan;
+	public GameObject thug_one;
+	public GameObject thug_two;
 
 	public List<Transform> scanLocations = new List<Transform>();
 	private int scanIndex = 0;
@@ -39,6 +41,12 @@ public class FinalCheckState : GameState
 
 		if (theVan != null)
 			theVan.SetActive(false);
+
+		if (thug_one != null)
+			thug_one.SetActive(false);
+
+		if (thug_two != null)
+			thug_two.SetActive(false);
 
 		if (!MoveNextLocation())
 			OnFinished();

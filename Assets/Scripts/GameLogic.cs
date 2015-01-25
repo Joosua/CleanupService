@@ -66,7 +66,7 @@ public class GameLogic : MonoBehaviour
 	
 	void Start ()
 	{
-		Invoke("StartGame", 0.1f);
+		Invoke("StartGame", 0.2f);
 		PlayOnce();
 	}
 

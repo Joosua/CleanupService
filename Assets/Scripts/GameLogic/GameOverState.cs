@@ -47,6 +47,6 @@ public class GameOverState : GameState
 	public void OnFinish()
 	{
 		MenuManager.Instance.HideMenu<GameOverHUD>();
-		Application.LoadLevel("Level1");
+		Application.LoadLevel("rigidbody_testbed");
 	}
 }

@@ -398,6 +398,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &148730
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 448730}
+  - 33: {fileID: 3348730}
+  - 64: {fileID: 6448730}
+  - 23: {fileID: 2348730}
+  m_Layer: 0
+  m_Name: sun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &159478
 GameObject:
   m_ObjectHideFlags: 1
@@ -1186,7 +1204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -419.149994, y: -323.929993, z: 1.99000001}
+  m_LocalPosition: {x: -418.429993, y: -323.929993, z: 1.99000001}
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 479724}
@@ -1262,6 +1280,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447874}
+  - {fileID: 448730}
   m_Father: {fileID: 479720}
   m_RootOrder: 3
 --- !u!4 &447874
@@ -1276,6 +1295,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 447872}
   m_RootOrder: 0
+--- !u!4 &448730
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.03999996, y: -2.14980006, z: 22.3899994}
+  m_LocalScale: {x: 17.2627449, y: 15.0160303, z: 17.2627487}
+  m_Children: []
+  m_Father: {fileID: 447872}
+  m_RootOrder: 1
 --- !u!4 &470476
 Transform:
   m_ObjectHideFlags: 1
@@ -1806,6 +1837,26 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!23 &2348730
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148730}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 9f5ecb6dc095560458f932677b2b1a81, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2370476
 Renderer:
   m_ObjectHideFlags: 1
@@ -1992,6 +2043,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147874}
   m_Mesh: {fileID: 4300000, guid: 8991a2ef75ad5f948a04cc45ca50972f, type: 3}
+--- !u!33 &3348730
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148730}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3370476
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -2013,6 +2071,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179726}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &6448730
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!81 &8147872
 AudioListener:
   m_ObjectHideFlags: 1
@@ -2315,7 +2386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: {x: -9, y: -1}
-  max: {x: 31, y: 3.5}
+  max: {x: 31, y: 1.5}
 --- !u!114 &11447876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2453,7 +2524,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 2047872}
-  totalTime: 5
+  speechBuble: {fileID: 0}
+  speechBubleAnimState: 0
+  speechBubleSclCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: .0937499925
+      outSlope: .0937499925
+      tangentMode: 0
+    - time: .771707177
+      value: 1.13869226
+      inSlope: .648200512
+      outSlope: .648200512
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 2.02325606
+      outSlope: 2.02325606
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  speechBubleRotCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: -.534084499
+      outSlope: -.534084499
+      tangentMode: 0
+    - time: .537918031
+      value: -.0922801048
+      inSlope: .0589108095
+      outSlope: .0589108095
+      tangentMode: 0
+    - time: .887077689
+      value: .0323165469
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  totalTime: 240
 --- !u!114 &11479642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2495,8 +2613,8 @@ MonoBehaviour:
   - {fileID: 423528}
   - {fileID: 423530}
   policeOfficer: {fileID: 121090}
-  scanTime: 5
-  turnTime: 2.5
+  scanTime: 4
+  turnTime: 2
 --- !u!114 &11479646
 MonoBehaviour:
   m_ObjectHideFlags: 1

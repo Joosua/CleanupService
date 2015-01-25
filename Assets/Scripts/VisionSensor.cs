@@ -52,10 +52,20 @@ public class VisionSensor : MonoBehaviour
 						obj.VisibilityState = GameActor.Visibility.Visible;
 						if (!alertSound.isPlaying)
 							alertSound.Play();
+
+						CreateExclamationMark(obj.gameObject);
 					}
 				}
 			}
 			nextCheckTime = Time.time + (1.0f / refreshRate);
 		}
+	}
+
+	void CreateExclamationMark(GameObject target)
+	{
+		GameObject go = Instantiate(GameLogic.Instance.exclamationMarkPrefab, Vector3.zero, Quaternion.identity) as GameObject;
+
+		go.transform.parent = target.transform;
+		go.transform.localPosition = new Vector3(0f, 1f, 0f);
 	}
 }

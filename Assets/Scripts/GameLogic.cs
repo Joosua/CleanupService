@@ -6,6 +6,7 @@ public class GameLogic : MonoBehaviour
 {
 	public LayerMask visionMask;
 	public AudioSource music;
+	public GameObject exclamationMarkPrefab;
 
 	private static GameLogic instance;
 	public static GameLogic Instance

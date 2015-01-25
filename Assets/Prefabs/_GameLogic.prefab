@@ -1303,7 +1303,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -404.799988, y: -322.5, z: -10}
+  m_LocalPosition: {x: -433, y: -322.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447874}
@@ -1328,7 +1328,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170476}
   m_LocalRotation: {x: -2.17886986e-06, y: -1, z: -1.29387763e-06, w: 7.15379826e-08}
-  m_LocalPosition: {x: -437.779999, y: -321.670013, z: -1.80999994}
+  m_LocalPosition: {x: -438.320007, y: -321.670013, z: -1.80999994}
   m_LocalScale: {x: .644235134, y: .644235134, z: .644235134}
   m_Children:
   - {fileID: 470482}
@@ -2555,7 +2555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 2047872}
-  totalTime: 5
+  totalTime: 200
 --- !u!114 &11479642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2585,6 +2585,8 @@ MonoBehaviour:
   evidenceFailCount: 7
   evidences: []
   theVan: {fileID: 170476}
+  thug_one: {fileID: 0}
+  thug_two: {fileID: 0}
   scanLocations:
   - {fileID: 479722}
   - {fileID: 479726}

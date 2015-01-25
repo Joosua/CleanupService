@@ -24,9 +24,9 @@ public class MoveState : GameState
 		MenuManager.Instance.Menu<ItemMoveHUD>().SetClock(timeLeft);
 		nextTick = Time.time + 1f;
 
-		Debug.Log(camera.name);
 		camera.GetComponent<DragRigidbody>().enabled = true;
 		camera.GetComponent<CameraControl>().enabled = true;
+		speechBuble.SetActive(true);
 
 		base.OnEnabled();
 	}

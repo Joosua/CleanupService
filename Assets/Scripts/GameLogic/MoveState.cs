@@ -61,9 +61,14 @@ public class MoveState : GameState
 			}
 			else
 			{
-				GameLogic.Instance.ActiveState = GameLogic.Instance.State<FinalCheckState>();
+				Leave();
 			}
 			nextTick = Time.time + 1f;
 		}
+	}
+
+	public void Leave()
+	{
+		GameLogic.Instance.ActiveState = GameLogic.Instance.State<FinalCheckState>();
 	}
 }

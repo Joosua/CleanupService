@@ -9,12 +9,10 @@ public abstract class IMenuBase : MonoBehaviour
 
 	public void Start()
 	{
-		MenuManager.Instance.RegisterMenu(this);
 	}
 
 	public void OnDestroyed()
 	{
-		MenuManager.Instance.UnregisterMenu(this);
 	}
 
 	virtual public void Hide()

@@ -20,8 +20,10 @@ public class FinalCheckState : GameState
 	public override void OnEnabled()
 	{
 		foreach (GameActor actor in GameLogic.Instance.gameObjects)
+		{
 			if (actor.Type == GameActor.ActorType.Evidence)
 				evidences.Add(actor);
+		}
 
 		evidenceFound = 0;
 
@@ -71,8 +73,14 @@ public class FinalCheckState : GameState
 	{
 		Vector3 euler = policeOfficer.transform.eulerAngles;
 		euler.y = euler.y < 180 ? 270f : 90f;
-		Debug.Log("Euler is " + euler);
 		policeOfficer.transform.eulerAngles = euler;
+	}
+
+	public void Start()
+	{
+		foreach (Transform t in scanLocations)
+			if (t.renderer != null)
+				t.renderer.enabled = false;
 	}
 
 	public override void Tick()

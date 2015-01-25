@@ -29,6 +29,10 @@ public class VisionSensor : MonoBehaviour
 			RaycastHit hitInfo;
 			foreach (GameActor obj in GameLogic.Instance.gameObjects)
 			{
+				// If Actor is already seen ignore raycast.
+				if (obj.visibilityState == GameActor.Visibility.Visible)
+					continue;
+
 				direction = obj.transform.position - transform.position;
 				distance = direction.sqrMagnitude;
 				direction.Normalize();

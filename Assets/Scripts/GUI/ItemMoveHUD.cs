@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -6,6 +6,7 @@ public class ItemMoveHUD : IMenuBase
 {
 	private MoveState state;
 	public Text timeText;
+	public Button leaveButton;
 
 	public override void OnShow()
 	{

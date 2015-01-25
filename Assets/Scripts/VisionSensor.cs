@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class VisionSensor : MonoBehaviour
@@ -27,6 +27,8 @@ public class VisionSensor : MonoBehaviour
 			float distance;
 			Ray ray = new Ray();
 			RaycastHit hitInfo;
+			LayerMask raycastMask = GameLogic.Instance.visionMask;
+
 			foreach (GameActor obj in GameLogic.Instance.gameObjects)
 			{
 				// If Actor is already seen ignore raycast.
@@ -44,7 +46,7 @@ public class VisionSensor : MonoBehaviour
 					ray.direction = direction;
 					ray.origin = transform.position;
 					Debug.DrawLine(ray.origin, ray.origin + ray.direction * 5f, Color.blue, 2f);
-					if (Physics.Raycast(ray, out hitInfo, maxDistance) &&
+					if (Physics.Raycast(ray, out hitInfo, maxDistance, raycastMask) &&
 						hitInfo.collider.gameObject == obj.gameObject)
 					{
 						obj.VisibilityState = GameActor.Visibility.Visible;

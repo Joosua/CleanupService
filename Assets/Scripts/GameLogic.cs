@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class GameLogic : MonoBehaviour
 {
+	public LayerMask visionMask;
+
 	private static GameLogic instance;
 	public static GameLogic Instance
 	{

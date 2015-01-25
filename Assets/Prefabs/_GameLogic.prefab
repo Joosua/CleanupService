@@ -943,6 +943,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5f05d20f8589a4ca4e89b4242c39e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visionMask:
+    serializedVersion: 2
+    m_Bits: 4294963913
   gameObjects: []
   gameStates:
   - {fileID: 11479640}

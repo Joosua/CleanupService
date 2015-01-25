@@ -33,12 +33,10 @@ public class BloodStain : MonoBehaviour {
 
 		amount += removeamount;
 		float alpha = startcutout + (1.0f - startcutout) * (amount/maxblood);
-		//print (alpha);
 		renderer.material.SetFloat ("_Cutoff", alpha);
-		print (renderer.material.GetFloat ("_Cutoff"));
-		if (amount > maxblood) {
-			//Destroy(gameObject);
+		if (amount > maxblood - maxblood * 0.1f) {
 			gameObject.renderer.enabled =false;
+			Destroy(gameObject);
 		}
 	}
 

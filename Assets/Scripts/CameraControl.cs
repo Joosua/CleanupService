@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class CameraControl : MonoBehaviour {
+	public Vector2 min;
+	public Vector2 max;
 	Vector3 lastpos;
 	// Use this for initialization
 	void Start () {
@@ -18,5 +20,9 @@ public class CameraControl : MonoBehaviour {
 			transform.position -= delta * 0.02f;
 			lastpos=Input.mousePosition;
 		}
+		Vector3 pos = transform.position;
+		pos.x = Mathf.Clamp (pos.x, min.x, max.x);
+		pos.y = Mathf.Clamp (pos.y, min.y, max.y);
+		transform.position = pos;
 	}
 }

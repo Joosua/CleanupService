@@ -95,9 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49724dc6243aeca409be7815084b06b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorType: 0
+  actorType: 1
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

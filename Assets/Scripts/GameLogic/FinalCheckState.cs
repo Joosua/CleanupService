@@ -10,6 +10,8 @@ public class FinalCheckState : GameState
 	public GameObject theVan;
 	public GameObject thug_one;
 	public GameObject thug_two;
+	public GameObject thug_three;
+	public GameObject thug_four;
 
 	public List<Transform> scanLocations = new List<Transform>();
 	private int scanIndex = 0;
@@ -47,6 +49,12 @@ public class FinalCheckState : GameState
 
 		if (thug_two != null)
 			thug_two.SetActive(false);
+
+		if (thug_three != null)
+			thug_three.SetActive(false);
+		
+		if (thug_four != null)
+			thug_four.SetActive(false);
 
 		if (!MoveNextLocation())
 			OnFinished();

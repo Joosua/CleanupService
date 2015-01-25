@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class GameLogic : MonoBehaviour
 {
 	public LayerMask visionMask;
-	public AudioSource music;
 	public GameObject exclamationMarkPrefab;
 
 	private static GameLogic instance;
@@ -68,16 +67,6 @@ public class GameLogic : MonoBehaviour
 	void Start ()
 	{
 		Invoke("StartGame", 0.2f);
-		PlayOnce();
-	}
-
-	public void PlayOnce()
-	{
-		if (music != null)
-		{
-			music.Play();
-			Invoke("PlayOnce", 30f);
-		}
 	}
 
 	void StartGame()

@@ -63,9 +63,6 @@ public class VisionSensor : MonoBehaviour
 
 	void CreateExclamationMark(GameObject target)
 	{
-		GameObject go = Instantiate(GameLogic.Instance.exclamationMarkPrefab, Vector3.zero, Quaternion.identity) as GameObject;
-
-		go.transform.parent = target.transform;
-		go.transform.localPosition = new Vector3(0f, 1f, 0f);
+		GameObject go = Instantiate(GameLogic.Instance.exclamationMarkPrefab, target.transform.position + Vector3.up * 0.5f, GameLogic.Instance.exclamationMarkPrefab.transform.rotation) as GameObject;
 	}
 }

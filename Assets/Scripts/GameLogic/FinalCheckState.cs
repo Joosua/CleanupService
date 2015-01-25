@@ -7,6 +7,7 @@ public class FinalCheckState : GameState
 	public int evidenceFound = 0;
 	public int evidenceFailCount = 7;
 	public List<GameActor> evidences = new List<GameActor>();
+	public GameObject theVan;
 
 	public List<Transform> scanLocations = new List<Transform>();
 	private int scanIndex = 0;
@@ -35,6 +36,9 @@ public class FinalCheckState : GameState
 
 		nextLocationTime = Time.time + scanTime;
 		nextTurnTime = Time.time + turnTime;
+
+		if (theVan != null)
+			theVan.SetActive(false);
 
 		if (!MoveNextLocation())
 			OnFinished();

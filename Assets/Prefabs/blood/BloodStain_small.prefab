@@ -13,7 +13,7 @@ GameObject:
   - 65: {fileID: 6514070}
   - 114: {fileID: 11414070}
   - 114: {fileID: 11400072}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BloodStain_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,9 +82,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49724dc6243aeca409be7815084b06b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorType: 0
+  actorType: 1
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!114 &11414070
 MonoBehaviour:
   m_ObjectHideFlags: 1

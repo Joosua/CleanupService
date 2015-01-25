@@ -24,6 +24,7 @@ ModelImporter:
     100036: leg_down_right
     100038: leg_up_left
     100040: leg_up_right
+    100042: torso
     400000: //RootNode
     400002: Object01
     400004: Object02
@@ -45,6 +46,7 @@ ModelImporter:
     400036: leg_down_right
     400038: leg_up_left
     400040: leg_up_right
+    400042: torso
     2300000: Object01
     2300002: Object02
     2300004: Object03
@@ -66,6 +68,7 @@ ModelImporter:
     2300036: leg_down_right
     2300038: leg_up_left
     2300040: leg_up_right
+    2300042: torso
     3300000: Object01
     3300002: Object02
     3300004: Object03
@@ -87,6 +90,7 @@ ModelImporter:
     3300036: leg_down_right
     3300038: leg_up_left
     3300040: leg_up_right
+    3300042: torso
     4300000: Plane001
     4300002: Plane002
     4300004: Object02

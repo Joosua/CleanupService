@@ -13,7 +13,7 @@ GameObject:
   - 65: {fileID: 6574898}
   - 114: {fileID: 11446010}
   - 114: {fileID: 11495310}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BloodStain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.53999996, y: .209999993, z: 2.6099999}
-  m_LocalScale: {x: .394771218, y: .394771218, z: .394771218}
+  m_LocalPosition: {x: 11.6800003, y: .25, z: 2.6099999}
+  m_LocalScale: {x: .607646525, y: .607646525, z: .607646525}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,9 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49724dc6243aeca409be7815084b06b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actorType: 0
+  actorType: 1
   noticedMaterial: {fileID: 0}
   hoverText: Unknown Object
+  visibilityState: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

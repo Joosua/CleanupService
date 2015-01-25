@@ -65,7 +65,7 @@ GameObject:
   - 114: {fileID: 11478134}
   - 65: {fileID: 6531356}
   - 65: {fileID: 6574350}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: flame_volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -4,7 +4,10 @@ using System.Collections;
 public class MoveState : GameState
 {
 	public Camera camera;
-
+	public GameObject speechBuble;
+	public float speechBubleAnimState = 0;
+	public AnimationCurve speechBubleSclCurve;
+	public AnimationCurve speechBubleRotCurve;
 	public int totalTime = 10;
 	private int timeLeft = 0;
 	public int TimeLeft
@@ -28,6 +31,14 @@ public class MoveState : GameState
 		base.OnEnabled();
 	}
 
+	public void AnimateSpeechBubble(){
+		speechBubleAnimState += Time.fixedDeltaTime;
+		float scl = speechBubleSclCurve.Evaluate(speechBubleAnimState * 4.0f);
+		float rot = speechBubleRotCurve.Evaluate(speechBubleAnimState * 4.0f) * 42f;
+		speechBuble.transform.localScale = new Vector3 (scl, scl, scl);
+		speechBuble.transform.eulerAngles = new Vector3 (0, 0, rot);
+
+	}
 	public override void OnDisabled()
 	{
 		camera.GetComponent<DragRigidbody>().enabled = false;
@@ -39,6 +50,8 @@ public class MoveState : GameState
 
 	public override void Tick()
 	{
+		AnimateSpeechBubble ();
+
 		if (Time.time >= nextTick)
 		{
 			timeLeft -= 1;

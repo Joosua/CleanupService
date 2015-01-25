@@ -8,6 +8,9 @@ public class ObjectiveState : GameState
 		base.OnEnabled();
 		MenuManager.Instance.HideAll();
 		MenuManager.Instance.ShowMenu<ObjectiveHUD>();
+
+		//Camera.main.GetComponent<CameraControl>().enabled = false;
+		//Camera.main.GetComponent<RigidBodyDrag>().enabled = false;
 	}
 
 	public override void OnDisabled()

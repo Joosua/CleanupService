@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MoveState : GameState
 {
+	public Camera camera;
+
 	public int totalTime = 10;
 	private int timeLeft = 0;
 	public int TimeLeft
@@ -14,17 +16,23 @@ public class MoveState : GameState
 
 	public override void OnEnabled()
 	{
-		Debug.Log("Set state to Move!");
 		timeLeft = totalTime;
 		MenuManager.Instance.ShowMenu<ItemMoveHUD>();
 		MenuManager.Instance.Menu<ItemMoveHUD>().SetClock(timeLeft);
 		nextTick = Time.time + 1f;
+
+		Debug.Log(camera.name);
+		camera.GetComponent<DragRigidbody>().enabled = true;
+		camera.GetComponent<CameraControl>().enabled = true;
 
 		base.OnEnabled();
 	}
 
 	public override void OnDisabled()
 	{
+		camera.GetComponent<DragRigidbody>().enabled = false;
+		camera.GetComponent<CameraControl>().enabled = false;
+
 		MenuManager.Instance.HideMenu<ItemMoveHUD>();
 		base.OnDisabled();
 	}

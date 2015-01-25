@@ -37,3 +37,7 @@ Material:
         first:
           name: _Color
         second: {r: .588235319, g: .588235319, b: .588235319, a: 1}
+      data:
+        first:
+          name: _FleshColor
+        second: {r: .279411793, g: .0823949575, b: .00205450039, a: 1}

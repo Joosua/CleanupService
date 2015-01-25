@@ -13,8 +13,8 @@ public class Water : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		defaultoffset = watervisual.renderer.material.mainTextureOffset;
-		isAcid = false;
-		animateAcid = false;
+		//isAcid = false;
+		//animateAcid = false;
 	}
 	
 	// Update is called once per frame

@@ -73,10 +73,10 @@ public class FinalCheckState : GameState
 		policeOfficer.transform.position = scanLocations[scanIndex].position;
 		scanIndex++;
 
-		Vector3 pos = policeOfficer.transform.position;
-		pos.z = Camera.main.transform.position.z;
-		pos.y = Camera.main.transform.position.y;
-		Camera.main.transform.position = pos;
+		Vector3 target = Camera.main.transform.position;
+		target.x = policeOfficer.transform.position.x;
+
+		Camera.main.GetComponent<TweenCameraMove>().MoveToTarget(target, 1f);
 
 		return true;
 	}

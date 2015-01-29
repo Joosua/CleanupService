@@ -4,9 +4,6 @@ using System.Collections.Generic;
 
 public class GameLogic : MonoBehaviour
 {
-	public LayerMask visionMask;
-	public GameObject exclamationMarkPrefab;
-
 	private static GameLogic instance;
 	public static GameLogic Instance
 	{
@@ -15,6 +12,9 @@ public class GameLogic : MonoBehaviour
 			return instance;
 		}
 	}
+
+    public LayerMask visionMask;
+    public GameObject exclamationMarkPrefab;
 
 	public List<GameActor> gameObjects = new List<GameActor>();
 

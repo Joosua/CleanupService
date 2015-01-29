@@ -7,11 +7,9 @@ public class FinalCheckState : GameState
 	public int evidenceFound = 0;
 	public int evidenceFailCount = 7;
 	public List<GameActor> evidences = new List<GameActor>();
-	public GameObject theVan;
-	public GameObject thug_one;
-	public GameObject thug_two;
-	public GameObject thug_three;
-	public GameObject thug_four;
+
+    // List of game objects that get hidden when state actives
+    public List<GameObject> hideList = new List<GameObject>();
 
 	public List<Transform> scanLocations = new List<Transform>();
 	private int scanIndex = 0;
@@ -41,20 +39,8 @@ public class FinalCheckState : GameState
 		nextLocationTime = Time.time + scanTime;
 		nextTurnTime = Time.time + turnTime;
 
-		if (theVan != null)
-			theVan.SetActive(false);
-
-		if (thug_one != null)
-			thug_one.SetActive(false);
-
-		if (thug_two != null)
-			thug_two.SetActive(false);
-
-		if (thug_three != null)
-			thug_three.SetActive(false);
-		
-		if (thug_four != null)
-			thug_four.SetActive(false);
+        foreach (GameObject go in hideList)
+            go.SetActive(false);
 
 		if (!MoveNextLocation())
 			OnFinished();

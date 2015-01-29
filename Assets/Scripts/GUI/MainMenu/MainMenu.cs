@@ -11,12 +11,22 @@ public class MainMenu : IMenuBase
 
     override public void OnHide()
     {
-        
+        if (playButton != null)
+            playButton.onClick.RemoveListener(OnPlayButtonPressed);
     }
 
     override public void OnShow()
     {
         if (moveCameraTarget != null)
             Camera.main.GetComponent<TweenCameraMove>().MoveToTarget(moveCameraTarget.position, 1f);
+
+        if (playButton != null)
+            playButton.onClick.AddListener(OnPlayButtonPressed);
+    }
+
+    void OnPlayButtonPressed()
+    {
+        MenuManager.Instance.HideMenu<MainMenu>();
+        MenuManager.Instance.ShowMenu<LevelMenu>();
     }
 }

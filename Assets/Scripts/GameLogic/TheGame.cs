@@ -26,16 +26,6 @@ public class TheGame : MonoBehaviour
     {
         instance = this;
     }
-
-    void Start()
-    {
-        Invoke("ShowMainMenu", 1f);
-    }
-
-    void ShowMainMenu()
-    {
-        MenuManager.Instance.ShowMenu<MainMenu>();
-    }
     
     public List<LevelInfo> levels = new List<LevelInfo>();
 }

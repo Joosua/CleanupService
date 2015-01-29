@@ -10,6 +10,8 @@ public class MenuManager : MonoBehaviour
 		get { return instance; }
 	}
 
+    public IMenuBase startUpMenu;
+
 	public List<IMenuBase> menus = new List<IMenuBase>();
 
 	public T Menu<T>() where T : IMenuBase
@@ -70,5 +72,7 @@ public class MenuManager : MonoBehaviour
 	public void Start()
 	{
 		HideAll();
+        if (startUpMenu != null)
+            startUpMenu.Show();
 	}
 }

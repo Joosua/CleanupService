@@ -289,9 +289,13 @@ MonoBehaviour:
   endoffset: {x: -.0599999987, y: 0}
   defaultoffset: {x: 0, y: 0}
   targetoffset: {x: 0, y: 0}
-  animateAcid: 0
+  animateAcid: 1
   isAcid: 1
-  acidEffect: {fileID: 0}
+  acidEffect: {fileID: 19852228}
+  dissolveDir: -20
+  dissolved: 0
+  dissolvedmax: 25
+  effectStartEmit: 0
 --- !u!136 &13678134
 CapsuleCollider:
   m_ObjectHideFlags: 1

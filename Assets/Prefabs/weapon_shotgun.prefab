@@ -15,6 +15,7 @@ GameObject:
   - 54: {fileID: 5485602}
   - 65: {fileID: 6585602}
   - 114: {fileID: 11445894}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: weapon_shotgun
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185602}
   m_LocalRotation: {x: -1.13057956e-06, y: 2.98023064e-08, z: -1.49011861e-08, w: 1}
-  m_LocalPosition: {x: 1.91999996, y: .204999998, z: -.126000002}
+  m_LocalPosition: {x: 3.41100001, y: .340000004, z: -.129999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +75,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!65 &6585602
 BoxCollider:
@@ -86,7 +87,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.08904409, y: .16892691, z: .0616736971}
+  m_Size: {x: 1.29999995, y: .230000004, z: 7.5999999}
   m_Center: {x: -.168289006, y: -.000963375205, z: 5.587939e-09}
 --- !u!95 &9585602
 Animator:
@@ -103,6 +104,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9149fd3c89f7644e8349dd57b6e3342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resistance: .50999999
+  subrenderers: []
 --- !u!114 &11445894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resistance: .430000007
+  subrenderers: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

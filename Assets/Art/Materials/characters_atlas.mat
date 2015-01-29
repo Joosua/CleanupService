@@ -32,6 +32,10 @@ Material:
         first:
           name: _Cutoff
         second: 0
+      data:
+        first:
+          name: _BurnMask
+        second: 0
     m_Colors:
       data:
         first:

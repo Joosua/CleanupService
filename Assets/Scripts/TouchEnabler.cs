@@ -18,7 +18,6 @@ public class TouchEnabler : MonoBehaviour {
 			defaultLayerMasks[i] = rigidbodiesToEnable[i].gameObject.layer;
 			rigidbodiesToEnable[i].gameObject.layer = LayerMask.NameToLayer("RaycastOnly");
 		}*/
-		print ("jfdasfaspdf");
 	}
 	void OnMouseDown() {
 		print ("TOUCH");

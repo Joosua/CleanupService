@@ -7,25 +7,33 @@ var angularDrag = 5.0;
 var distance = 0.2;
 var attachToCenterOfMass = false;
 var raycastMask : LayerMask;
-
+var hitObject : GameObject;
+var hitPoint : Vector3;
 private var springJoint : SpringJoint;
 
 function Update ()
 {
 	// Make sure the user pressed the mouse down
-	if (!Input.GetMouseButtonDown (0))
-		return;
+	
 
 	var mainCamera = FindCamera();
-		
+	hitObject = null;
 	// We need to actually hit an object
 	var hit : RaycastHit;
 	if (!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition),  hit, 100, raycastMask))
 		return;
+	
+	
 	// We need to hit a rigidbody that is not kinematic
 	if (!hit.rigidbody || hit.rigidbody.isKinematic)
 		return;
+	else{
+		hitObject = hit.collider.gameObject;
+		hitPoint = hit.point;
+	}
 	
+	if (!Input.GetMouseButtonDown (0))
+		return;
 	
 	if (!springJoint)
 	{
@@ -44,7 +52,7 @@ function Update ()
 		anchor = springJoint.transform.InverseTransformPoint(anchor);
 		springJoint.anchor = anchor;
 	}
-	else
+	else if(springJoint && springJoint.connectedBody)
 	{
 		springJoint.anchor = Vector3.zero;
 	}
@@ -64,10 +72,11 @@ function DragObject (distance : float)
 	springJoint.connectedBody.drag = drag;
 	springJoint.connectedBody.angularDrag = angularDrag;
 	var mainCamera = FindCamera();
-	while (Input.GetMouseButton (0))
+	while (Input.GetMouseButton (0) && springJoint.connectedBody && springJoint.connectedBody.gameObject)
 	{
 		var ray = mainCamera.ScreenPointToRay (Input.mousePosition);
 		springJoint.transform.position = ray.GetPoint(distance);
+		hitObject = springJoint.connectedBody.gameObject;
 		yield;
 	}
 	if (springJoint.connectedBody)
@@ -75,6 +84,7 @@ function DragObject (distance : float)
 		springJoint.connectedBody.drag = oldDrag;
 		springJoint.connectedBody.angularDrag = oldAngularDrag;
 		springJoint.connectedBody = null;
+		hitObject = null;
 	}
 }
 

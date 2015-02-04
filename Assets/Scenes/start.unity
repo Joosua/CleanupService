@@ -6828,7 +6828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - sceneName: rigidbody_testbed
+  - sceneName: level_1
     name: Tiny Apartments
     description: Add description of the mission here.
     image: {fileID: 0}

@@ -1,73 +1,84 @@
-Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+Initialize engine version: 4.6.0f3 (30840d631a27)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.035 seconds
-desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.087 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Ohjelmointi\Jam\CleanupService\builds\win_final\Disposables_Data\Managed\System.dll (this message is harmless)
 HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
  
-(Filename:  Line: 2466)
+(Filename:  Line: 2456)
 
-Platform assembly: D:\Jams\Global Game Jam\CleanupService\builds\win_final\Disposables_Data\Managed\Boo.Lang.dll (this message is harmless)
-jfdasfaspdf
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2458)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-jfdasfaspdf
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-jfdasfaspdf
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-jfdasfaspdf
+UnloadTime: 3.562533 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2456)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2458)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2418.
+Total: 1.812800 ms (FindLiveObjects: 0.110488 ms CreateObjectMapping: 0.028355 ms MarkObjects: 0.483511 ms  DeleteObjects: 0.581777 ms)
+
+UnloadTime: 13.195601 ms
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2456)
+
+HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
+ 
+(Filename:  Line: 2458)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 124 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 6.074445 ms (FindLiveObjects: 0.183822 ms CreateObjectMapping: 0.143733 ms MarkObjects: 0.915200 ms  DeleteObjects: 3.176800 ms)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-jfdasfaspdf
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-jfdasfaspdf
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-jfdasfaspdf
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-TOUCH
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Axe (UnityEngine.Rigidbody)
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-TOUCH
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-knife (UnityEngine.Rigidbody)
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
